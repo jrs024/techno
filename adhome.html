@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domian Broker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        function openPage(pageName, elmnt, color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+   tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+    </script>
+    <header>
+        <h1 style="font-family: Times New Roman, Times, serif; text-overflow: ellipsis;">PRIME DOMAIN</h1>
+        <a href="adhome.html"><button class="tablink" onclick="openPage('Home', this, 'red')">DOMAIN</button></a>
+        <a href="adwebsite.html"><button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">WEBSITES</button></a>
+        <a href="adabout.html"><button class="tablink" onclick="openPage('Contact', this, 'blue')">ABOUT US</button></a>
+        <a href="clogin.html"><button class="tablink" onclick="openPage('About', this, 'orange')">LOGOUT</button></a>
+    </header>
+    <div class="scroller">
+    <section class="items">
+        <div class="item">
+            <img src="gomommy.jpg" alt="Item 1">
+            <h2>GoMommy</h2>
+            <p>GoMommy is domain name that a name support all the mommy especially all single mother in a world</p>          
+            <a href="adwebsite.html" style="color: #fff;"><button style="background-color: crimson;" onclick="return confirm('The item has been removed')">Remove</a></button>
+        
+        </div>
+        <div class="item">
+            <img src="godaddy.webp" alt="Item 2">
+            <h2>GoDaddy</h2>
+            <p>GoDaddy offers reliable and affordable WordPress hosting and WooCommerce hosting plans, one-click installs and the latest version so you have the most recent features available for your site. Your website content is managed from one place; you have a wealth of themes and add-ons giving you limitless options to succeed.</p>
+            <a href="adwebsite.html" style="color: #fff;"><button style="background-color: crimson;" onclick="return confirm('The item has been removed')">Remove</a></button>
+
+        </div>
+        <div class="item">
+            <img src="anime.webp" alt="Item 3">
+            <h2>Otaku</h2>
+            <p>Otakess is domain name for all otaku in this world that they can communicate ,talk about anime, and create an organizztion for otaku</p>
+            <a href="adwebsite.html" style="color: #fff;"><button style="background-color: crimson;" onclick="return confirm('The item has been removed')">Remove</a></button>
+        </div>
+    </section>
+
+    <a href="aditems.html"><button style="padding: 3%; margin-left: 11.9%; margin-bottom: 2%;margin-top: -3%;background-color: gainsboro;opacity: 0.4; width: 150px; border-radius: 15px;"><p style="color: black; font-weight: bold;font-size: 25px;">+</p></button></a>
+    </div>
+    <footer>
+        <p>&copy; 2023 Domain Prime Marketplace. All rights Reserved.</p>
+    </footer>
+</body>
+</html>

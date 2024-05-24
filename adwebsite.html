@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domian Broker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        function openPage(pageName, elmnt, color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+   tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+    </script>
+    <header>
+        <h1 style="font-family: Times New Roman, Times, serif; text-overflow: ellipsis;">PRIME DOMAIN</h1>
+        <a href="adhome.html"><button class="tablink" onclick="openPage('Home', this, 'red')">DOMAIN</button></a>
+        <a href="adwebsite.html"><button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">WEBSITES</button></a>
+        <a href="adabout.html"><button class="tablink" onclick="openPage('Contact', this, 'blue')">ABOUT US</button></a>
+        <a href="clogin.html"><button class="tablink" onclick="openPage('About', this, 'orange')">LOGOUT</button></a>
+        
+    </header>
+    <div class="scroller">
+    <section class="items">
+        <div class="item">
+            <img src="logistic.webp" alt="Item 1">
+            <h2>Logistic Management System</h2>
+            <p>Logistics management systems are software tools that businesses use to move goods from the source of production to the final user. For logistics to be successful, it requires keen attention to detail in planning, transporting and warehousing processes.</p>          
+            <a href="adwebsite.html" style="color: #fff;"><button style="background-color: crimson;" onclick="return confirm('The item has been removed')">Remove</a></button>
+        </div>
+        <div class="item">
+            <img src="invent.webp" alt="Item 2">
+            <h2>Inventory Management System</h2>
+            <p>Inventory management software is a software system for tracking inventory levels, orders, sales and deliveries. It can also be used in the manufacturing industry to create a work order, bill of materials and other production-related documents.</p>
+            <a href="adwebsite.html" style="color: #fff;"><button style="background-color: crimson;" onclick="return confirm('The item has been removed')">Remove</a></button>
+        </div>
+        <div class="item">
+            <img src="hr.jpg" alt="Item 3">
+            <h2>HRMS</h2>
+            <p>An HRMS, or human resources management system, is a suite of software applications used to manage human resources and related processes throughout the employee lifecycle. An HRMS enables a company to fully understand its workforce while staying compliant with changing tax laws and labor regulations</p>
+            <a href="adwebsite.html" style="color: #fff;"><button style="background-color: crimson;" onclick="return confirm('The item has been removed')">Remove</a></button>
+        </div>
+    </section>
+      
+    <a href="aditems1.html"><button style="padding: 3%; margin-left: 11.9%; margin-bottom: 2%;margin-top: -3%;background-color: gainsboro;opacity: 0.4; width: 150px; border-radius: 15px;"><p style="color: black; font-weight: bold;font-size: 25px;">+</p></button></a>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 Domain Prime Marketplace. All rights Reserved.</p>
+    </footer>
+</body>
+</html>

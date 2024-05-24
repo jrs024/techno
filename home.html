@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domian Broker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        function openPage(pageName, elmnt, color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+   tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+    </script>
+    <header>
+        <h1 style="font-family: Times New Roman, Times, serif; text-overflow: ellipsis;">PRIME DOMAIN</h1>
+        <a href="home.html"><button class="tablink" onclick="openPage('Home', this, 'red')">DOMAIN</button></a>
+        <a href="website.html"><button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">WEBSITES</button></a>
+        <a href="about.html"><button class="tablink" onclick="openPage('Contact', this, 'blue')">ABOUT US</button></a>
+        <a href="clogin.html"><button class="tablink" onclick="openPage('About', this, 'orange')">LOGOUT</button></a>
+    </header>
+    <div class="scroller">
+    <section class="items">
+        <div class="item">
+            <img src="gomommy.jpg" alt="Item 1">
+            <h2>GoMommy</h2>
+            <p>GoMommy is domain name that a name support all the mommy especially all single mother in a world</p>          
+            <button id="myBtn2">Contact Seller</button>
+
+            <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p style="color: black; font-weight: bold;">Company number : 09246813579</p>
+                  <p style="color: black; font-weight: bold;">Gmail : Powerdomain@gmail.com</p>
+                </div>
+              
+              </div>
+        </div>
+        <div class="item">
+            <img src="godaddy.webp" alt="Item 2">
+            <h2>GoDaddy</h2>
+            <p>GoDaddy offers reliable and affordable WordPress hosting and WooCommerce hosting plans, one-click installs and the latest version so you have the most recent features available for your site. Your website content is managed from one place; you have a wealth of themes and add-ons giving you limitless options to succeed.</p>
+            <button id="myBtn">Contact Seller</button>
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p style="color: black; font-weight: bold;">Company number : 09246813579</p>
+                  <p style="color: black; font-weight: bold;">Gmail : Powerdomain@gmail.com</p>
+                </div>
+              
+              </div>
+        </div>
+        <div class="item">
+            <img src="anime.webp" alt="Item 3">
+            <h2>Otaku</h2>
+            <p>Otakess is domain name for all otaku in this world that they can communicate ,talk about anime, and create an organizztion for otaku</p>
+            <button id="myBtn1">Contact Seller</button>
+
+            <div id="myModal1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p style="color: black; font-weight: bold;">Company number : 09246813579</p>
+                  <p style="color: black; font-weight: bold;">Gmail : Powerdomain@gmail.com</p>
+                </div>
+              
+              </div>
+        </div>
+    </section>
+    <div class="">
+    </div>
+    </div>
+
+    <script>
+
+var modal = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+        var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var modal = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+    <footer>
+        <p>&copy; 2023 Domain Prime Marketplace. All rights Reserved.</p>
+    </footer>
+</body>
+</html>

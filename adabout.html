@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domian Broker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        function openPage(pageName, elmnt, color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+   tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+    </script>
+    <header>
+        <h1 style="font-family: Times New Roman, Times, serif; text-overflow: ellipsis;">PRIME DOMAIN</h1>
+        <a href="adhome.html"><button class="tablink" onclick="openPage('Home', this, 'red')">DOMAIN</button></a>
+        <a href="adwebsite.html"><button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">WEBSITES</button></a>
+        <a href="adabout.html"><button class="tablink" onclick="openPage('Contact', this, 'blue')">ABOUT US</button></a>
+        <a href="clogin.html"><button class="tablink" onclick="openPage('About', this, 'orange')">LOGOUT</button></a>
+    </header>
+    <div class="scroller">
+
+    <h2>Power Domain Company</h2>
+    <p style="font-size: 12px;font-family: 'Courier New', Courier, monospace; text-align: center;">This company composed of five(5) people and each one have assign in different position <br>to manage the domain power company and to maintain its integrity,technology maintainance, and security of this company.</p>
+
+      <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <th>Action</th>
+       </tr>
+       <tr>
+            <td>Jimmy</td>
+            <td>Saquez</td>
+            <td>Company Owner</td>
+            <td><a href="adupdate.html"><button style="color: greenyellow; padding: 10px;">Update</button></a> <button style="color: crimson;padding: 10px;">Remove</button></td>
+      </tr>
+      <tr>
+            <td>Grace</td>
+            <td>Lipit</td>
+            <td>Vice President</td>
+            <td><a href="adupdate.html"><button style="color: greenyellow; padding: 10px;">Update</button></a> <button style="color: crimson;padding: 10px;">Remove</button></td>
+      </tr>
+      <tr>
+            <td>John Philip</td>
+            <td>Par</td>
+            <td>Technology Mintainance</td>
+            <td><a href="adupdate.html"><button style="color: greenyellow; padding: 10px;">Update</button></a> <button style="color: crimson;padding: 10px;" onclick="return confirm('Are you sure you want to delete this?')">Remove</button></td>
+      </tr>
+      <tr>
+            <td>Jeffrey</td>
+            <td>Salabao</td>
+            <td>Programmer</td>
+            <td><a href="adupdate.html"><button style="color: greenyellow; padding: 10px;">Update</button></a> <button style="color: crimson;padding: 10px;" onclick="return confirm('Are you sure you want to delete this?')">Remove</button></td>
+      </tr>
+      <tr>
+            <td>Vincent</td>
+            <td>Daez</td>
+            <td>Database Administrator</td>
+            <td><a href="adupdate.html"><button style="color: greenyellow; padding: 10px;">Update</button></a> <button style="color: crimson;padding: 10px;" onclick="return confirm('Are you sure you want to delete this?')">Remove</button></td>
+      </tr>
+     </table>
+     </div>
+    <footer>
+        <p>&copy; 2023 Domain Prime Marketplace. All rights Reserved.</p>
+    </footer>
+</body>
+</html>
